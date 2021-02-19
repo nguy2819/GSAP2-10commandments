@@ -1,0 +1,93 @@
+body {
+    height: 100%; 
+    margin: 0;
+    margin-top: 10px;
+    // display: grid;
+    // grid-template-columns: auto 30%;
+    font-family: 'Newsreader';
+    // color:black;
+    // padding: 9em;
+    // background-color: white;
+}
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
+
+aside{
+    background: url('../images/RT306_1024x1024.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // width: 100%;
+    // bottom: 0;
+    // right: 0;
+    // padding: 15% 7%;
+    height: 100vh;
+    position: relative;
+
+    .eng {
+        width: 540px;
+        left: -90px;
+        top: 540px;
+        opacity:1;
+        position: absolute;
+        transform: rotate(45deg);
+    }
+
+    .vie{
+        width: 390px;
+        right: 25px;
+        top: 54%;
+        opacity:1;
+        position: absolute;
+    }
+}
+
+main{
+    margin-left: 50px;
+    height: 100%;
+    place-content: center;
+    display: grid;
+    grid-template-columns: auto 50%;
+    // flex-direction: row;
+
+    .content{
+        margin-right: 10px;
+        h1{
+            font-family: 'Newsreader';
+            font-size: 4.5em;
+            color: #C79E70;
+            line-height: 1em;
+            position: relative;
+            margin-top: 0px;
+            span{
+                display: block;
+            }
+         }
+    
+        section{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        button{
+            background-color: #182458;
+            border: 1px solid #182458;
+            padding: .5em 1em;
+            cursor: pointer;
+        }
+    
+        p{
+            font-size: 1.2rem;
+            line-height: 1.7em;
+            margin-bottom: 2em;
+            color: black;
+            opacity:1;
+            font-family: 'Newsreader';
+        }
+    
+        .p1{
+            font-size: 0.9em;
+            color: black;
+            opacity:1;
+            font-family: 'Newsreader';
+        }
+    }
+}

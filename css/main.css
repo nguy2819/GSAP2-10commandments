@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap");
+body {
+  height: 100%;
+  margin: 0;
+  margin-top: 10px;
+  font-family: 'Newsreader';
+}
+
+aside {
+  background: url("../images/RT306_1024x1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+aside .eng {
+  width: 540px;
+  left: -90px;
+  top: 540px;
+  opacity: 1;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+aside .vie {
+  width: 390px;
+  right: 25px;
+  top: 54%;
+  opacity: 1;
+  position: absolute;
+}
+
+main {
+  margin-left: 50px;
+  height: 100%;
+  place-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 50%;
+      grid-template-columns: auto 50%;
+}
+
+main .content {
+  margin-right: 10px;
+}
+
+main .content h1 {
+  font-family: 'Newsreader';
+  font-size: 4.5em;
+  color: #C79E70;
+  line-height: 1em;
+  position: relative;
+  margin-top: 0px;
+}
+
+main .content h1 span {
+  display: block;
+}
+
+main .content section {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .content button {
+  background-color: #182458;
+  border: 1px solid #182458;
+  padding: .5em 1em;
+  cursor: pointer;
+}
+
+main .content p {
+  font-size: 1.2rem;
+  line-height: 1.7em;
+  margin-bottom: 2em;
+  color: black;
+  opacity: 1;
+  font-family: 'Newsreader';
+}
+
+main .content .p1 {
+  font-size: 0.9em;
+  color: black;
+  opacity: 1;
+  font-family: 'Newsreader';
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="content">
+            <section>
+                <h1 class="anim1"><span>Ten Commandments</span> <span>Mười Điều Răn</span></h1>
+                <p class="anim1">Mười Điều Răn là những nguyên tắc phúc âm vĩnh cửu cần thiết cho sự tôn cao của chúng
+                    ta. Chúa đã tiết lộ chúng cho Môi-se trong thời cổ đại (xin xem <a
+                        href="https://kinhthanh.httlvn.org/doc-kinh-thanh/xu/20?v=RVV11">Xuất Ê-díp-tô Ký 20: 1–17</a>),
+                    và chúng cũng được nhắc đến toàn bộ hoặc một phần trong các sách thánh thư khác (xin xem <a
+                        href="https://kinhthanh.httlvn.org/doc-kinh-thanh/mat/19?v=BD2011#18">Ma-thi-ơ 19: 18–19</a>; <a
+                        href="http://kinhthanh.httlvn.org/doc-kinh-thanh/ro/13?v=NVB#9">Rô-ma 13: 9</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/12.33-36?lang=vie#p33#33">
+                        Mô Si A 12 : 33–36</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/13.13-24?lang=vie#p13#13">
+                        13: 13–24</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42.18-29?lang=vie#p18#18">
+                        Giáo lý và Giao ước 42: 18–29</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/59.5-13?lang=vie#p5#5">59:
+                        5–13</a>; <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/63.61-62?lang=vie#p61#61">63:
+                        61–62</a>). Mười Điều Răn là một phần quan trọng của phúc âm. Việc tuân theo các điều răn này mở
+                    đường cho việc tuân theo các nguyên tắc phúc âm khác.</p>
+                <p1>[Trích dẫn từ <a
+                        href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/ten-commandments?lang=vie">Giáo
+                        Hội Các Thánh Hữu Ngày Sau Của Chúa Giê Su Ky Tô</a>]</p1>
+            </section>
+            <hr>
+            <section>
+                <p class="anim1">The Ten Commandments are eternal gospel principles that are necessary for our
+                    exaltation. The Lord revealed them to Moses in ancient times (see <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/ot/ex/20.1-17?lang=eng#p1#1">Exodus
+                        20:1–17</a>), and they are also referenced in whole or in part in other books of scripture (see
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/19.18-19?lang=eng#p18#18">Matthew
+                        19:18–19</a>; <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/rom/13.9?lang=eng#p9#9">Romans
+                        13:9</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/12.33-36?lang=eng#p33#33">
+                        Mosiah 12:33–36</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/13.13-24?lang=eng#p13#13">
+                        13:13–24</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/42.18-29?lang=eng#p18#18">
+                        Doctrine and Covenants 42:18–29</a>;<a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/59.5-13?lang=eng#p5#5">
+                        59:5–13</a>; <a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/63.61-62?lang=eng#p61#61">
+                        63:61–62</a>). The Ten Commandments are a vital part of the gospel. Obedience to these
+                    commandments paves the way for obedience to other gospel principles.</p>
+                <p class="p1">[Cited from <a
+                        href="https://www.churchofjesuschrist.org/study/manual/gospel-topics/ten-commandments?lang=eng">The
+                        Church of Jesus Christ of Latter-day Saints</a>]</p>
+                <button><a class="anim1" href="#" id="cta">😍</a></button>
+            </section>
+        </div>
+        <aside>
+            <img src="images/107639861_727531318037165_8977069293141533327_n_prev_ui.png"
+                alt="a hand holding Book of Mormon in Vietnamese" class="vie">
+            <img src="images/istockphoto-1251199050-612x612_prev_ui.png" alt="Book of Mormon English verse" class="eng">
+        </aside>
+    </main>
+
+
+
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+    <script>
+        gsap.from('div', { opacity: 0, duration: 1, y: -50 });
+        gsap.from('img', { opacity: 0, duration: 1, y: 30, delay: 1.4 });
+        gsap.from('aside', { opacity: 0, duration: 1, backgroundPosition: '200px 0px', delay: 1.1 })
+    </script>
+</body>
+
+</html>
