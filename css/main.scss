@@ -12,49 +12,42 @@ body {
 @import url('https://fonts.googleapis.com/css2?family=Newsreader:wght@600&display=swap');
 
 aside{
-    background: url('../images/RT306_1024x1024.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    // width: 100%;
-    // bottom: 0;
-    // right: 0;
-    // padding: 15% 7%;
-    height: 100vh;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+}
 
-    .eng {
-        width: 540px;
-        left: -90px;
-        top: 540px;
-        opacity:1;
-        position: absolute;
-        transform: rotate(45deg);
-    }
+.eng {
+    width: 540px;
+    left: -90px;
+    top: 590px;
+    opacity:1;
+    position: absolute;
+    transform: rotate(45deg);
+}
 
-    .vie {
-        width: 390px;
-        right: 25px;
-        top: 54%;
-        opacity:1;
-        position: absolute;
-    }
+.vie {
+    width: 390px;
+    right: 25px;
+    top: 54%;
+    opacity:1;
+    position: absolute;
+}
 
-    .eng1 {
-        width: 240px;
-        left: 40px;
-        top: 960px;
-        opacity:1;
-        position: absolute;
-    }
+.eng1 {
+    width: 240px;
+    left: 40px;
+    top: 960px;
+    opacity:1;
+    position: absolute;
+}
 
-    .vie1 {
-        width: 240px;
-        right: 115px;
-        top: 960px;
-        opacity:1;
-        position: absolute;
-        height: 321px;
-    }
+.vie1 {
+    width: 240px;
+    right: 115px;
+    top: 960px;
+    opacity:1;
+    position: absolute;
+    height: 321px;
 }
 
 main{
@@ -92,8 +85,10 @@ main{
             font-weight: bold;
             text-transform: uppercase;
             text-decoration: none;
-            padding: 1em;
+            padding: 1.5em;
             cursor: pointer;
+            margin-top: 10px;
+            margin-right: 10px;
         }
     
         p{
@@ -111,18 +106,22 @@ main{
             opacity:1;
             font-family: 'Newsreader';
         }
+
+        mark.red {
+            color:#C79E71;
+            background: none;
+        }
     }
 }
 
-// span:after {
-//     content: ' ';
-//     position: absolute;
-//     left: 0;
-//     width: 100%;
-//     height: 100%; 
-//     z-index: 1;
-//     transform-origin: 100% 0;
-// }
+.bom-image{
+    background: url('../images/RT306_1024x1024.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 900px;
+    margin-bottom: 100px;
+}
 
 .vie:hover {
     animation: shake-vie 0.5s;
@@ -172,52 +171,56 @@ main{
     100% { transform: translate(1px, -2px) rotate(44deg); }
   }
 
-  .iframe1 {
-      position: absolute;
-      margin-top: 995px;
+iframe{
+    height: 465px;
+    margin: 15px 0;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+}
+
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 7px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
   }
 
-  .iframe2 {
-    position: absolute;
-    margin-top: 1490px;
+  .fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
   }
 
-  .iframe3 {
-    position: absolute;
-    margin-top: 1985px;
+  .fa-globe {
+      background: #141641;
+      color: #C79E71;
   }
 
-  .iframe4 {
-    position: absolute;
-    margin-top: 2480px;
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
   }
 
-  .iframe5 {
-    position: absolute;
-    margin-top: 2975px;
+  .fa-twitter {
+    background: #52A8E7;
+    color: white;
   }
 
-  .iframe6 {
-    position: absolute;
-    margin-top: 3470px;
+  .explain1 {
   }
 
-  .iframe7 {
-    position: absolute;
-    margin-top: 3965px;
-  }
-
-  .iframe8 {
-    position: absolute;
-    margin-top: 4460px;
-  }
-
-  .iframe9 {
-    position: absolute;
-    margin-top: 4955px;
-  }
-
-  .iframe10 {
-    position: absolute;
-    margin-top: 5450px;
+  .explain2{
   }

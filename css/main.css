@@ -7,24 +7,26 @@ body {
 }
 
 aside {
-  background: url("../images/RT306_1024x1024.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-aside .eng {
+.eng {
   width: 540px;
   left: -90px;
-  top: 540px;
+  top: 590px;
   opacity: 1;
   position: absolute;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-aside .vie {
+.vie {
   width: 390px;
   right: 25px;
   top: 54%;
@@ -32,7 +34,7 @@ aside .vie {
   position: absolute;
 }
 
-aside .eng1 {
+.eng1 {
   width: 240px;
   left: 40px;
   top: 960px;
@@ -40,7 +42,7 @@ aside .eng1 {
   position: absolute;
 }
 
-aside .vie1 {
+.vie1 {
   width: 240px;
   right: 115px;
   top: 960px;
@@ -89,8 +91,10 @@ main .content button {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1em;
+  padding: 1.5em;
   cursor: pointer;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 main .content p {
@@ -107,6 +111,20 @@ main .content .p1 {
   color: black;
   opacity: 1;
   font-family: 'Newsreader';
+}
+
+main .content mark.red {
+  color: #C79E71;
+  background: none;
+}
+
+.bom-image {
+  background: url("../images/RT306_1024x1024.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 900px;
+  margin-bottom: 100px;
 }
 
 .vie:hover {
@@ -325,53 +343,57 @@ main .content .p1 {
   }
 }
 
-.iframe1 {
-  position: absolute;
-  margin-top: 995px;
+iframe {
+  height: 465px;
+  margin: 15px 0;
 }
 
-.iframe2 {
-  position: absolute;
-  margin-top: 1490px;
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
-.iframe3 {
-  position: absolute;
-  margin-top: 1985px;
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 7px;
 }
 
-.iframe4 {
-  position: absolute;
-  margin-top: 2480px;
+.fa:hover {
+  opacity: 0.7;
 }
 
-.iframe5 {
-  position: absolute;
-  margin-top: 2975px;
+.fa-facebook {
+  background: #3B5998;
+  color: white;
 }
 
-.iframe6 {
-  position: absolute;
-  margin-top: 3470px;
+.fa-instagram {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), -webkit-gradient(linear, left top, left bottom, from(#6559ca), color-stop(30%, #bc318f), color-stop(50%, #e33f5f), color-stop(70%, #f77638), to(#fec66d));
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  color: white;
 }
 
-.iframe7 {
-  position: absolute;
-  margin-top: 3965px;
+.fa-globe {
+  background: #141641;
+  color: #C79E71;
 }
 
-.iframe8 {
-  position: absolute;
-  margin-top: 4460px;
+.fa-youtube {
+  background: #bb0000;
+  color: white;
 }
 
-.iframe9 {
-  position: absolute;
-  margin-top: 4955px;
-}
-
-.iframe10 {
-  position: absolute;
-  margin-top: 5450px;
+.fa-twitter {
+  background: #52A8E7;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */
