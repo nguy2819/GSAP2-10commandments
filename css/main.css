@@ -14,11 +14,15 @@ aside {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
 .eng {
-  width: 540px;
-  left: -90px;
+  width: 290px;
+  left: -60px;
   top: 590px;
   opacity: 1;
   position: absolute;
@@ -26,12 +30,26 @@ aside {
           transform: rotate(45deg);
 }
 
+@media (min-width: 768px) {
+  .eng {
+    left: -90px;
+    width: 540px;
+  }
+}
+
 .vie {
-  width: 390px;
-  right: 25px;
+  width: 190px;
+  right: 5px;
   top: 54%;
   opacity: 1;
   position: absolute;
+}
+
+@media (min-width: 768px) {
+  .vie {
+    right: 25px;
+    width: 390px;
+  }
 }
 
 .eng1 {
@@ -52,22 +70,34 @@ aside {
 }
 
 main {
-  margin-left: 50px;
   height: 100%;
   place-content: center;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto 50%;
-      grid-template-columns: auto 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 main .content {
-  margin-right: 10px;
+  margin: 5px 10px;
 }
 
 main .content h1 {
   font-family: 'Newsreader';
-  font-size: 4.5em;
+  font-size: 2.5em;
+  font-weight: bold;
   color: #C79E70;
   line-height: 1em;
   position: relative;
@@ -78,8 +108,13 @@ main .content h1 span {
   display: block;
 }
 
+@media (min-width: 768px) {
+  main .content h1 {
+    font-size: 4em;
+  }
+}
+
 main .content section {
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -93,8 +128,7 @@ main .content button {
   text-decoration: none;
   padding: 1.5em;
   cursor: pointer;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin: 10px 10px 0 5px;
 }
 
 main .content p {
@@ -116,6 +150,12 @@ main .content .p1 {
 main .content mark.red {
   color: #C79E71;
   background: none;
+}
+
+@media (min-width: 768px) {
+  main .content {
+    margin: 15px 30px;
+  }
 }
 
 .bom-image {
@@ -346,6 +386,7 @@ main .content mark.red {
 iframe {
   height: 465px;
   margin: 15px 0;
+  width: 100%;
 }
 
 .social {
@@ -364,7 +405,13 @@ iframe {
   width: 50px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 7px;
+  margin: 5px 3px;
+}
+
+@media (min-width: 768px) {
+  .fa {
+    margin: 5px 7px;
+  }
 }
 
 .fa:hover {
